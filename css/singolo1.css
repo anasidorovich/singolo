@@ -34,7 +34,7 @@ ul {
   margin: 0 auto;
 }
 
-.block {
+.wrapper {
   width: 940px;
   height: 100%;
   margin: 0 auto;
@@ -61,12 +61,12 @@ ul {
   border-bottom: 6px solid #323746;
 }
 
-.header .block,
+.header .wrapper,
 .navigation {
   display: flex;
 }
 
-.header .block {
+.header .wrapper {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -79,6 +79,7 @@ ul {
   font-size: 25px;
   line-height: 6px;
   font-family: Lato-Bold, sans-serif;
+  letter-spacing: -0.7px;
 }
 
 .logo a {
@@ -95,11 +96,26 @@ ul {
 
 .navigation a {
   display: block;
-  padding: 11px 0 0 30px;
+  padding: 11px 0 0 14px;
 
   line-height: 6px;
   font-family: Lato-Bold, sans-serif;
   color: #ffffff;
+  letter-spacing: -0.2px;
+}
+
+.navigation > li:not(:last-child) > a:after {
+  content: "\A";
+
+  display: inline-block;
+  width: 2px;
+  height: 2px;
+  margin-bottom: 3px;
+  margin-left: 14px;
+
+  background: #656d89;
+  border-radius: 50%;
+  opacity: 0.5;
 }
 
 li.navigation-item a:hover,
