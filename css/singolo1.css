@@ -107,3 +107,125 @@ li.navigation-item a:active,
 .navigation-item.navigation-item_selected a {
   color: #f06c64;
 }
+
+.slider {
+  height: 600px;
+  margin-bottom: 70px;
+
+  background-color: #f06c64;
+  border-bottom: 15px solid #ea676b;
+}
+
+.services {
+  height: 500px;
+}
+
+.services__header {
+  width: 940px;
+  margin: 0 auto;
+  margin-bottom: 47px;
+}
+
+.services .services__title {
+  padding-bottom: 26px;
+
+  font-size: 30px;
+  line-height: 18px;
+  font-family: Lato-Black, sans-serif;
+  color: #666d89;
+}
+
+.services .services__description {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: Lato-Light, sans-serif;
+  color: #767e9e;
+}
+
+.columns__row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.columns__row:last-child {
+  margin: 0;
+}
+
+.columns__column {
+  display: flex;
+  flex: 1 1 30%;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.columns__column:last-child {
+  margin: 0;
+}
+
+.columns__item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.item__content {
+  flex: 1;
+  margin-top: -4px;
+}
+
+.item__content h4 {
+  padding-bottom: 8px;
+
+  font-size: 18px;
+  font-family: Lato-Black, sans-serif;
+  color: #666d89;
+}
+
+.item__content p {
+  width: 100%;
+  overflow: hidden;
+
+  font-size: 12px;
+  line-height: 22px;
+  font-family: Lato-Regular, sans-serif;
+  text-align: justify;
+  color: #767e9e;
+}
+
+.ico {
+  flex: 0 0 60px;
+  height: 60px;
+  margin-right: 20px;
+
+  background-color: transparent;
+  border: 2px solid #656d89;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.ico.ico_pen {
+  background: url(../assets/services/pen.png) no-repeat center;
+}
+
+.ico.ico_bulb {
+  background: url(../assets/services/bulb.png) no-repeat center;
+}
+
+.ico.ico_heart {
+  background: url(../assets/services/heart.png) no-repeat center;
+}
+
+.ico.ico_phone {
+  background: url(../assets/services/phone.png) no-repeat center;
+}
+
+.ico.ico_bubble {
+  background: url(../assets/services/bubble.png) no-repeat center;
+}
+
+.ico.ico_star {
+  background: url(../assets/services/star.png) no-repeat center;
+}
