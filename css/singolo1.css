@@ -12,7 +12,7 @@
 }
 
 body {
-  font: 12px Lato-Regular, sans-serif;
+  font: 12px Lato-Regular, Helvetica, sans-serif;
   color: #8f8f8f;
 
   background-color: #f2f2f2;
@@ -78,7 +78,7 @@ ul {
 
   font-size: 25px;
   line-height: 6px;
-  font-family: Lato-Bold, sans-serif;
+  font-family: Lato-Bold, Helvetica, sans-serif;
   letter-spacing: -0.7px;
 }
 
@@ -99,7 +99,7 @@ ul {
   padding: 11px 0 0 14px;
 
   line-height: 6px;
-  font-family: Lato-Bold, sans-serif;
+  font-family: Lato-Bold, Helvetica, sans-serif;
   color: #ffffff;
   letter-spacing: -0.2px;
 }
@@ -118,9 +118,9 @@ ul {
   opacity: 0.5;
 }
 
-li.navigation-item a:hover,
-li.navigation-item a:active,
-.navigation-item.navigation-item_selected a {
+li.navigation__item a:hover,
+li.navigation__item a:active,
+.navigation__item.navigation__item_selected a {
   color: #f06c64;
 }
 
@@ -155,9 +155,8 @@ li.navigation-item a:active,
 .slider-chev:focus,
 .slider-chev:active {
   opacity: 0.4;
+  cursor: pointer;
 }
-
-
 
 .slider-chev_right {
   margin-right: -2px;
@@ -216,11 +215,11 @@ li.navigation-item a:active,
 }
 
 .phone_horizontal .phone__image {
-  background-image: url(../assets/sliders/layer_horizontal.png);
+  background-image: url(../assets/sliders/bg.jpg);
   background-position: 57px -105px;
   transform: rotate(-90deg);
 
-  clip: rect(13px, 516px, 204px, 181px);
+  clip: rect(14px, 515px, 202px, 182px);
 }
 
 .phone_vertical .phone__image {
@@ -260,14 +259,14 @@ li.navigation-item a:active,
 
   font-size: 30px;
   line-height: 18px;
-  font-family: Lato-Black, sans-serif;
+  font-family: Lato-Black, Helvetica, sans-serif;
   color: #666d89;
 }
 
 .services .services__description {
   font-size: 18px;
   line-height: 30px;
-  font-family: Lato-Light, sans-serif;
+  font-family: Lato-Light, Helvetica, sans-serif;
   color: #767e9e;
 }
 
@@ -288,7 +287,7 @@ li.navigation-item a:active,
   flex: 1 1 30%;
   flex-direction: column;
   margin-right: 20px;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 .columns__column:nth-child(3n) {
@@ -301,24 +300,31 @@ li.navigation-item a:active,
 }
 
 .item__content h4 {
-  padding-bottom: 10px;
+  padding-bottom: 9px;
 
   font-size: 18px;
   line-height: 18px;
-  font-family: Lato-Black, sans-serif;
+  font-family: Lato-Black, Helvetica, sans-serif;
   color: #666d89;
 }
 
 .item__content p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+     -moz-box-orient: vertical;
   width: 100%;
   overflow: hidden;
 
   font-size: 12px;
   line-height: 22px;
-  font-family: Lato-Regular, sans-serif;
-  text-align: justify;
+  font-family: Lato-Regular, Helvetica, sans-serif;
   color: #767e9e;
-  text-overflow: ellipsis;
+  word-break: break-all;
+
+      -ms-box-orient: vertical;
+  -webkit-line-clamp: 3;
+     -moz-line-clamp: 3;
+      -ms-line-clamp: 3;
 }
 
 .ico {
