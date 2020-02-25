@@ -215,7 +215,7 @@ li.navigation__item a:active,
 }
 
 .phone_horizontal .phone__image {
-  background-image: url(../assets/sliders/bg.jpg);
+  background-image: url(../assets/sliders/layer_horizontal.png);
   background-position: 57px -105px;
   transform: rotate(-90deg);
 
