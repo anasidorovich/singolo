@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" width="14" height="14">
+	<defs>
+		<image width="14" height="14" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAs0lEQVQ4T2NMzek8z8DIYMDAwPDgNzOb4YIJhR8YiACMqbmd/2Hq/v//5zhnSuUBIvQxMCLZ+OE3M5si0TaCTE/JaXcg1iaYazCcCpJgZGTaD6EZGhn+M/D/Z2AogGtgYJgwa3J5IV6NDAwMoIASQPczyEBCGkF6PjAw/N/AwMAYgGTIB4IaYSGdltMZ8J+RYT1RfgQpmj25nBFEZxS0K/z9y3SfZI0gDchxTtCpMBuHsEYABOmHrGdzGJUAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="linkedin" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+</svg>

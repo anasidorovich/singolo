@@ -67,19 +67,6 @@ a {
   letter-spacing: 0.1px;
 }
 
-.about__title {
-  padding-bottom: 27px;
-}
-
-.about__header {
-  margin-bottom: 45px;
-}
-
-.about__photo {
-  flex: 0 0 300px;
-  margin-bottom: 17px;
-}
-
 .layout-3-column {
   display: flex;
   flex-wrap: wrap;
@@ -108,20 +95,23 @@ a {
 
 .columns__item {
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .layout-4-column .columns__column {
   display: flex;
   flex-basis: 23%;
-
   margin-right: 20px;
   margin-bottom: 20px;
 }
 
 .layout-4-column .columns__column:nth-child(4n) {
   margin: 0;
+}
+
+.layout-4-column .columns__column:nth-child(n+13) {
+  display: none;
 }
 
 .item__content h4 {
@@ -186,19 +176,39 @@ a.category {
   border: 1px solid #c5c5c5;
 }
 
-.socials {
+.about__title {
+  padding-bottom: 27px;
+}
+
+.about__header {
+  margin-bottom: 45px;
+}
+
+.about__photo {
+  flex: 0 0 300px;
+  margin-bottom: 17px;
+}
+
+.about .item__content {
+  margin-bottom: 24px;
+}
+
+.about .socials {
   display: flex;
+  width: 100%;
   height: 32px;
 }
 
-.ico {
-  flex: 0 0 16px;
-  height: 16px;
-  margin-right: 20px;
-}
+.about .ico {
+  flex: 0 0 32px;
+  height: 32px;
+  margin-right: 8px;
 
-.ico.ico_facebook {
-  background: url(../assets/services/star.png) no-repeat center;
+  background-color: transparent;
+  border: 1px solid #666d89;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
 }
 
 .ico.ico_facebook {

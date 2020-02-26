@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" width="14" height="14">
+	<defs>
+		<image width="14" height="14" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAABZUlEQVQ4T21SS1LCQBB9TRS3eAO4Ad4ATiA3EKoM5QKssCGyElcYNqDDwiJWEU+gngBuADcwR8gWqKStGTI6IcxqMunX79NNANB0JqXzeDsBqCm/0xMB/OWLh5bx9nclebM73hqEEnPSIrLKAC/ku2UllbfpIDwJvO2MakSFJRGe5q/uUDXqPi8kO3NSf58NVieB7XtvyIxHAqZz4fZkkX4zgXbXY4BWvujXZQ1pRgDR3ipWgmkv0oym1BzQ8FgFEAK8kjKlArboAzEmB6lck80B2ihGnepZvGsS6DotCH3hVgw1OZsKqI/tjKuIeZ0yBOYoclLlDIvJzmHGDYCy2Sib9FE4dne8PMjjYG9d9GQ47Y7XYMKn9OQL9/I/aQp90Q+URyWBsfFn7lVGdjpLX7gZO7rmAARUGFmg9wOgpBmP06F03aqSlQr4VsGnfs2lyAHvnFE5jgtyVg3jZ0SEF72Cp1buFzvYtYTRg0qTAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="google+" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+</svg>

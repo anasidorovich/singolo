@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 12" width="14" height="12">
+	<defs>
+		<image width="14" height="12" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAMCAYAAABSgIzaAAABFElEQVQoU42ST07CQBTGv6+NrnsEbiDeQE4g3qAmlLig2m5KXOEOy4Yh3ZjUBG5gb4BH0BPIEbpuLM9MKaapA/hWM/Pm9773j3fBtFPCdlIVfaBlXjDropQ3AB3tIqAE/CTkgsP7+EkED7DZa8JuMHfOyuILgNMOCCDbgxMAOYlFYZ2rlQrzwWh6RVprA6S1b2n4kAOS7QC6f0G+p0nU48CPAwJzc2Tja5Ym4xt6/swFZPlfUIDwNRkrasDzn5fmtAzhbF7qJlbgcBT3hdBtP2G7+urRAFXrv4s1iO5Rslb7BfWhnpuutX9oBGkSrfa+ao76IltcH1DMAYZNqFKsVq7kBKBWam7JhkBm2dvFi3rctLP4AcAaZL7S0Tf1AAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="twitter" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+</svg>
