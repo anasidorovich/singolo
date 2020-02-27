@@ -79,6 +79,7 @@ a {
   flex: 1 1 30%;
   margin-right: 20px;
   margin-bottom: 30px;
+  max-width: 300px;
 }
 
 .layout-3-column .columns__column:nth-child(3n) {
@@ -97,6 +98,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 100%;
 }
 
 .layout-4-column .columns__column {
@@ -185,12 +187,17 @@ a.category {
 }
 
 .about__photo {
-  flex: 0 0 300px;
   margin-bottom: 17px;
 }
 
 .about .item__content {
+  width: 100%;
   margin-bottom: 24px;
+}
+
+.about .item__content h4 {
+    white-space:nowrap;
+    overflow:hidden;
 }
 
 .about .socials {
@@ -209,6 +216,12 @@ a.category {
   -webkit-border-radius: 50%;
      -moz-border-radius: 50%;
           border-radius: 50%;
+}
+
+.about .ico:hover,
+.about .ico:active {
+  cursor: pointer;
+  background-color: #ffffff;
 }
 
 .ico.ico_facebook {

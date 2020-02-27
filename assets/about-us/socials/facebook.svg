@@ -1,9 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14" width="8" height="14">
-	<defs>
-		<image width="8" height="14" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAOCAYAAAASVl2WAAAAf0lEQVQoU2NkQAJp2V1G/xn/TWNgZDSHCTPCGGnFPSL/f/29xcDAIIisCaEgp6vwP+P/Pqjkmv8MDEdBbLiC1LyOCQz/GfPBCpgZDWdPKLsAVpBa0GUAYvz/x1DK+P9/FJj9nzGCkYXhJkRBbud/ZDvR2UQoIGQFzEicjhwKCgAKUlJfC7vbiwAAAABJRU5ErkJggg=="/>
-	</defs>
-	<style>
-		tspan { white-space:pre }
-	</style>
-	<use id="facebook" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" version="1.1">
+  <defs>
+    <clipPath id="clip1">
+      <path d="M 0 0 L 8 0 L 8 13.847656 L 0 13.847656 Z M 0 0 " />
+    </clipPath>
+  </defs>
+  <style>
+    tspan { white-space:pre }
+    .grayed { fill: #666d89 }
+  </style>
+  <g id="surface1">
+    <g clip-path="url(#clip1)" clip-rule="nonzero">
+      <path class="grayed" d="M 8 2.40625 L 5.714844 2.40625 C 5.445312 2.40625 5.140625 2.75 5.140625 3.207031 L 5.140625 4.792969 L 8 4.792969 L 8 7.054688 L 5.140625 7.054688 L 5.140625 13.847656 L 2.445312 13.847656 L 2.445312 7.054688 L 0 7.054688 L 0 4.792969 L 2.445312 4.792969 L 2.445312 3.460938 C 2.445312 1.550781 3.824219 0 5.714844 0 L 8 0 Z M 8 2.40625 " />
+    </g>
+  </g>
 </svg>
