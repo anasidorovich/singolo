@@ -172,6 +172,8 @@ a.category {
   font-family: Lato-Regular, Helvetica, sans-serif;
 }
 
+.category:hover,
+.category:active,
 .category.category_selected {
   color: #dedede;
 
