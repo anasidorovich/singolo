@@ -22,6 +22,15 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
 .main {
   width: 1020px;
   margin: 0 auto;
@@ -170,6 +179,11 @@ a.category {
   font-size: 12px;
   line-height: 19px;
   font-family: Lato-Regular, Helvetica, sans-serif;
+}
+
+a.category:first-child {
+  padding-right: 7px;
+  padding-left: 7px;
 }
 
 .category:hover,
