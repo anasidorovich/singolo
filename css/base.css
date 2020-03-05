@@ -1,0 +1,51 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-family: "Lato", Helvetica, sans-serif;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 54px;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 18px;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+h4 {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: left;
+}

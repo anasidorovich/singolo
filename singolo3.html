@@ -9,7 +9,9 @@
 
   <!-- All CSS -->
   <link rel="stylesheet" href="css/normalize.css">
+
   <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/singolo3.css">
 
   <title>Singolo</title>
@@ -27,12 +29,11 @@
         </div>
       </div>
       <div class="layout-2-column">
-
         <div class="get-quote__form">
-          <form action method="POST">
+          <form action="https://pixabay.com/images/download/nose-4420535_1920.jpg?attachment^&modal" method="POST">
             <div class="columns__column">
               <input type="text" name="name" placeholder="Name (Required)" required>
-              <input type="email" name="email" placeholder="Email (Required)" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
+              <input type="email" name="email" placeholder="Email (Required)" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
 
               <input type="text" name="subject" placeholder="Subject">
               <textarea name="message" placeholder="Describe your project in detail..."></textarea>
@@ -59,10 +60,10 @@
       <a href="#" class="copyright"><img src="./assets/footer/copyright.png" alt="© Copyright 2013"></a>
       <div class="footer__content">
         <div class="socials">
-          <span class="item__icon ico ico_facebook"></span>
-          <span class="item__icon ico ico_google"></span>
-          <span class="item__icon ico ico_twitter"></span>
-          <span class="item__icon ico ico_linkedin"></span>
+          <span class="socials__icon ico ico_facebook"></span>
+          <span class="socials__icon ico ico_google"></span>
+          <span class="socials__icon ico ico_twitter"></span>
+          <span class="socials__icon ico ico_linkedin"></span>
         </div>
       </div>
     </div>
