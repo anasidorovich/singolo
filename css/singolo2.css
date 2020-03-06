@@ -1,0 +1,265 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+      -ms-box-sizing: border-box;
+       -o-box-sizing: border-box;
+}
+
+body {
+  font: 12px Lato-Regular, Helvetica, sans-serif;
+  color: #8f8f8f;
+
+  background-color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+.main {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 940px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 30px;
+  line-height: 18px;
+  font-family: Lato-Black, Helvetica, sans-serif;
+  color: #666d89;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: Lato-Light, Helvetica, sans-serif;
+  color: #767e9e;
+  letter-spacing: -0.2px;
+}
+
+.portfolio {
+  height: 870px;
+  margin-bottom: 68px;
+
+  background-color: #2d2f39;
+  border-bottom: 6px solid #313745;
+}
+
+.portfolio__header {
+  margin-bottom: 11px;
+  padding-top: 69px;
+}
+
+.portfolio__title {
+  padding-bottom: 27px;
+
+  letter-spacing: 0.1px;
+}
+
+.layout-3-column {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.layout-3-column .columns__column {
+  display: flex;
+  flex: 1 1 30%;
+  max-width: 300px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.layout-3-column .columns__column:nth-child(3n) {
+  margin: 0;
+}
+
+.layout-4-column {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 53px;
+}
+
+.columns__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.layout-4-column .columns__column {
+  display: flex;
+  flex-basis: 23%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.layout-4-column .columns__column:nth-child(4n) {
+  margin: 0;
+}
+
+.layout-4-column .columns__column:nth-child(n+13) {
+  display: none;
+}
+
+.item__content h4 {
+  padding-bottom: 9px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-family: Lato-Black, Helvetica, sans-serif;
+  color: #666d89;
+}
+
+.item__content p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+     -moz-box-orient: vertical;
+  width: 100%;
+  overflow: hidden;
+
+  font-size: 12px;
+  line-height: 22px;
+  font-family: Lato-Regular, Helvetica, sans-serif;
+  color: #767e9e;
+  word-break: break-all;
+
+      -ms-box-orient: vertical;
+  -webkit-line-clamp: 3;
+     -moz-line-clamp: 3;
+      -ms-line-clamp: 3;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  width: 288px;
+  margin-bottom: 19px;
+  margin-left: 1px;
+}
+
+.category {
+  height: 22px;
+
+  color: #767e9e;
+
+  border: 1px solid #666d89;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
+
+a.category {
+  padding-right: 6px;
+  padding-left: 6px;
+
+  font-size: 12px;
+  line-height: 19px;
+  font-family: Lato-Regular, Helvetica, sans-serif;
+}
+
+a.category:first-child {
+  padding-right: 7px;
+  padding-left: 7px;
+}
+
+.category:hover,
+.category:active,
+.category.category_selected {
+  color: #dedede;
+
+  border: 1px solid #c5c5c5;
+}
+
+.about {
+  padding-bottom: 7px;
+
+  background-color: #f2f2f2;
+  border-bottom: 6px solid #ffffff;
+}
+
+.about__title {
+  padding-bottom: 27px;
+}
+
+.about__header {
+  margin-bottom: 45px;
+}
+
+.about__photo {
+  margin-bottom: 17px;
+}
+
+.about .item__content {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.about .item__content h4 {
+  overflow: hidden;
+
+  white-space: nowrap;
+}
+
+.about .socials {
+  display: flex;
+  width: 100%;
+  height: 32px;
+}
+
+.about .ico {
+  flex: 0 0 32px;
+  height: 32px;
+  margin-right: 8px;
+
+  background-color: transparent;
+  border: 1px solid #666d89;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.about .ico:hover,
+.about .ico:active {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.ico.ico_facebook {
+  background: url(../assets/about-us/socials/facebook.svg) no-repeat center;
+}
+
+.ico.ico_twitter {
+  background: url(../assets/about-us/socials/twitter.svg) no-repeat center;
+}
+
+.ico.ico_linkedin {
+  background: url(../assets/about-us/socials/linkedin.svg) no-repeat center;
+}
+
+.ico.ico_google {
+  background: url(../assets/about-us/socials/google.svg) no-repeat center;
+}
