@@ -21,3 +21,35 @@
 
   src: url(../assets/fonts/Lato-Light.ttf);
 }
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  font-family: "Lato";
+
+  src: url("../assets/fonts/Light/Lato-Light.eot?v=1.0.0");
+  src: url("../assets/fonts/Light/Lato-Light.eot?#iefix&v=1.0.0") format("embedded-opentype"), url("../assets/fonts/Light/Lato-Light.woff2?v=1.0.0") format("woff2"), url("../assets/fonts/Light/Lato-Light.woff?v=1.0.0") format("woff"), url("../assets/fonts/Light/Lato-Light.ttf?v=1.0.0") format("truetype"), url("../assets/fonts/Light/Lato-Light.svg?v=1.0.0#LatoLight") format("svg");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Lato";
+
+  src: url("../assets/fonts/Regular/Lato-Regular.eot?v=1.0.0");
+  src: url("../assets/fonts/Regular/Lato-Regular.eot?#iefix&v=1.0.0") format("embedded-opentype"), url("../assets/fonts/Regular/Lato-Regular.woff2?v=1.0.0") format("woff2"), url("../assets/fonts/Regular/Lato-Regular.woff?v=1.0.0") format("woff"), url("../assets/fonts/Regular/Lato-Regular.ttf?v=1.0.0") format("truetype"), url("../assets/fonts/Regular/Lato-Regular.svg?v=1.0.0#LatoRegular") format("svg");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Lato";
+
+  src: url("../assets/fonts/Bold/Lato-Bold.eot?v=1.0.0");
+  src: url("../assets/fonts/Bold/Lato-Bold.eot?#iefix&v=1.0.0") format("embedded-opentype"), url("../assets/fonts/Bold/Lato-Bold.woff2?v=1.0.0") format("woff2"), url("../assets/fonts/Bold/Lato-Bold.woff?v=1.0.0") format("woff"), url("../assets/fonts/Bold/Lato-Bold.ttf?v=1.0.0") format("truetype"), url("../assets/fonts/Bold/Lato-Bold.svg?v=1.0.0#LatoBold") format("svg");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 900;
+  font-family: "Lato";
+
+  src: url("../assets/fonts/Black/Lato-Black.eot?v=1.0.0");
+  src: url("../assets/fonts/Black/Lato-Black.eot?#iefix&v=1.0.0") format("embedded-opentype"), url("../assets/fonts/Black/Lato-Black.woff2?v=1.0.0") format("woff2"), url("../assets/fonts/Black/Lato-Black.woff?v=1.0.0") format("woff"), url("../assets/fonts/Black/Lato-Black.ttf?v=1.0.0") format("truetype"), url("../assets/fonts/Black/Lato-Black.svg?v=1.0.0#LatoBlack") format("svg");
+}

@@ -1,0 +1,323 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+      -ms-box-sizing: border-box;
+       -o-box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  color: #8f8f8f;
+
+  background-color: #f2f2f2;
+}
+
+.main {
+  /* The main section will take up all the available free space
+      on the page that is not taken up by the footer. */
+  flex: 1 0 auto;
+}
+
+footer {
+  /* The footer will take up as much vertical space as it needs and not a pixel more. */
+  flex: 0 0 auto;
+  height: 76px;
+
+  background-color: #2d303a;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.button {
+  padding: 11px 25px 13px;
+
+  font: inherit;
+
+  border: 0;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  cursor: pointer;
+
+  transition: all 0.3s;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex: 1;
+  flex-basis: 100%;
+  flex-direction: column;
+}
+
+.layout-2-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.main {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 940px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.title {
+  color: #666d89;
+}
+
+.description {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: Lato, Helvetica, sans-serif;
+  text-align: justify;
+  color: #767e9e;
+}
+
+.get-quote {
+  height: 654px;
+
+  background-color: #f06c64;
+  border-bottom: 6px solid #ea676b;
+}
+
+.get-quote__header {
+  padding-top: 68px;
+  padding-bottom: 44px;
+}
+
+.get-quote__form [placeholder] {
+  background-color: #d6564f;
+  border: none;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.get-quote__title,
+.get-quote__description {
+  color: #f0d8d9;
+}
+
+.get-quote__form input::placeholder,
+.get-quote__form textarea::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  font-family: Lato, Helvetica, sans-serif;
+  color: #f48c8f;
+}
+
+.get-quote__form input:focus::placeholder,
+.get-quote__form textarea:focus::placeholder {
+  color: transparent;
+}
+
+.get-quote__title {
+  padding-bottom: 27px;
+
+  letter-spacing: -0.2px;
+}
+
+.get-quote__content {
+  width: 300px;
+
+  text-align: left;
+  color: #f0d8d9;
+}
+
+.get-quote__content,
+.get-quote__form input,
+.get-quote__form textarea {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  font-family: Lato, Helvetica, sans-serif;
+}
+
+.get-quote__form textarea {
+  padding: 7px 14px 8px 14px;
+}
+
+.get-quote__form input {
+  padding: 8px 14px 8px 14px;
+
+  letter-spacing: 0.1px;
+}
+
+.get-quote__form textarea[name="message"] {
+  height: 202px;
+
+  resize: none;
+}
+.get-quote .columns__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 620px;
+}
+
+.get-quote .columns__column > *:not(:last-child) {
+  margin-bottom: 16px;
+
+  color: #f0d8d9;
+}
+
+.get-quote__content h4,
+.get-quote__content p,
+.get-quote__content span {
+  color: #f0d8d9;
+}
+
+.get-quote__content h4 {
+  padding-bottom: 9px;
+
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: Lato, Helvetica, sans-serif;
+}
+
+.get-quote__content p {
+  max-height: 90px;
+  margin-bottom: 20px;
+  overflow: hidden;
+
+  text-align: justify;
+  word-break: break-all;
+}
+
+.get-quote__content .ico {
+  width: 13px;
+  margin-right: 9px;
+
+  background-color: #f0d8d9;
+}
+
+.button_colored:hover {
+  background-color: transparent;
+  border: 1px solid #f0d8d9;
+  border-radius: 4px;
+}
+
+.button_colored {
+  color: #f0d8d9;
+
+  background-color: #666d89;
+  border: none;
+}
+
+.get-quote__button {
+  align-self: flex-end;
+  margin-bottom: 12px;
+}
+
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.footer .copyright img {
+  margin-bottom: -1px;
+  margin-left: 1px;
+}
+
+.footer__content {
+  margin-left: auto;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  width: 152px;
+  height: 32px;
+}
+
+.ico {
+  display: inline-block;
+
+  cursor: pointer;
+}
+
+.socials__icon.ico {
+  flex: 0 0 32px;
+  height: 32px;
+
+  background-color: transparent;
+  border: 1px solid #666d89;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.socials__icon {
+  justify-content: center;
+  align-items: center;
+
+  background-color: #eb5055;
+}
+
+.socials .ico:hover,
+.socials .ico:active {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.ico.ico_facebook {
+  background: url(../assets/socials/facebook.svg) no-repeat center;
+}
+
+.ico.ico_twitter {
+  background: url(../assets/socials/twitter.svg) no-repeat center;
+}
+
+.ico.ico_linkedin {
+  background: url(../assets/socials/linkedin.svg) no-repeat center;
+}
+
+.ico.ico_google {
+  background: url(../assets/socials/google.svg) no-repeat center;
+}
+
+.ico.ico_phone {
+  height: 11px;
+
+  background: url(../assets/contacts/phone.png) no-repeat left center;
+}
+
+.ico.ico_email {
+  height: 8px;
+
+  background: url(../assets/contacts/mail.png) no-repeat center;
+}
+
+.ico.ico_location {
+  height: 11px;
+
+  background: url(../assets/contacts/location.png) no-repeat center;
+}

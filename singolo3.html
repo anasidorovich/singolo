@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- All CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/singolo3.css">
+
+  <title>Singolo</title>
+</head>
+
+<body>
+<div class="main">
+
+  <section class="get-quote">
+    <div class="wrapper">
+      <div class="get-quote__header">
+        <h2 class="get-quote__title title">Get a Quote</h2>
+        <div class="get-quote__description description">
+          <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+        </div>
+      </div>
+      <div class="layout-2-column">
+        <div class="get-quote__form">
+          <form action="https://pixabay.com/images/download/nose-4420535_1920.jpg?attachment^&modal" method="POST">
+            <div class="columns__column">
+              <input type="text" name="name" placeholder="Name (Required)" required>
+              <input type="email" name="email" placeholder="Email (Required)" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+
+              <input type="text" name="subject" placeholder="Subject">
+              <textarea name="message" placeholder="Describe your project in detail..."></textarea>
+              <div class="get-quote__button">
+                <button type="submit" class="button button_colored">Get a Quote</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="get-quote__content">
+          <div class="column">
+            <h4>Contact Information</h4>
+            <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. </p>
+            <div class="row"><span class="ico ico_location"></span>Elm St. 14/05 Lost City</div>
+            <div class="row"><span class="ico ico_phone"></span> <a href="tel:+375111111111">03528 331 86 35 </a></div>
+            <div class="row"><span class="ico ico_email"></span> <a href="mailto:info@singolo.com">info@singolo.com</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="wrapper footer__wrapper">
+      <a href="#" class="copyright"><img src="./assets/footer/copyright.png" alt="© Copyright 2013"></a>
+      <div class="footer__content">
+        <div class="socials">
+          <span class="socials__icon ico ico_facebook"></span>
+          <span class="socials__icon ico ico_google"></span>
+          <span class="socials__icon ico ico_twitter"></span>
+          <span class="socials__icon ico ico_linkedin"></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+
+</html>
