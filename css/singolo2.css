@@ -227,17 +227,17 @@ a.category:first-child {
 }
 
 .ico.ico_facebook {
-  background: url(../assets/about-us/socials/facebook.svg) no-repeat center;
+  background: url(../assets/socials/facebook.svg) no-repeat center;
 }
 
 .ico.ico_twitter {
-  background: url(../assets/about-us/socials/twitter.svg) no-repeat center;
+  background: url(../assets/socials/twitter.svg) no-repeat center;
 }
 
 .ico.ico_linkedin {
-  background: url(../assets/about-us/socials/linkedin.svg) no-repeat center;
+  background: url(../assets/socials/linkedin.svg) no-repeat center;
 }
 
 .ico.ico_google {
-  background: url(../assets/about-us/socials/google.svg) no-repeat center;
+  background: url(../assets/socials/google.svg) no-repeat center;
 }
