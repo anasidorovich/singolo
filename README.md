@@ -1,2 +1,2 @@
 # singolo
-Singolo
+https://anasidorovich.github.io/singolo
