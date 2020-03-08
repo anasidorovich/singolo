@@ -91,10 +91,9 @@ a {
 }
 
 .description {
-  font-weight: 300;
   font-size: 18px;
   line-height: 30px;
-  font-family: Lato, Helvetica, sans-serif;
+  font-family: Lato-Light, Helvetica, sans-serif;
   text-align: justify;
   color: #767e9e;
 }
@@ -126,10 +125,9 @@ a {
 
 .get-quote__form input::placeholder,
 .get-quote__form textarea::placeholder {
-  font-weight: 400;
   font-size: 12px;
   line-height: 22px;
-  font-family: Lato, Helvetica, sans-serif;
+  font-family: Lato-Regular, Helvetica, sans-serif;
   color: #f48c8f;
 }
 
@@ -154,10 +152,9 @@ a {
 .get-quote__content,
 .get-quote__form input,
 .get-quote__form textarea {
-  font-weight: 400;
   font-size: 12px;
   line-height: 22px;
-  font-family: Lato, Helvetica, sans-serif;
+  font-family: Lato-Regular, Helvetica, sans-serif;
 }
 
 .get-quote__form textarea {
@@ -179,7 +176,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 620px;
+  width: 619px;
 }
 
 .get-quote .columns__column > *:not(:last-child) {
@@ -197,10 +194,10 @@ a {
 .get-quote__content h4 {
   padding-bottom: 9px;
 
-  font-weight: 900;
   font-size: 18px;
   line-height: 18px;
-  font-family: Lato, Helvetica, sans-serif;
+  font-family: Lato-Black, Helvetica, sans-serif;
+  letter-spacing: -0.1px;
 }
 
 .get-quote__content p {
@@ -242,9 +239,12 @@ a {
   align-items: center;
 }
 
-.footer .copyright img {
-  margin-bottom: -1px;
-  margin-left: 1px;
+.footer .copyright {
+  margin-top: -1px;
+  margin-left: 2px;
+
+  color: #666d89;
+  letter-spacing: -0.2px;
 }
 
 .footer__content {
