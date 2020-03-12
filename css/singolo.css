@@ -252,6 +252,7 @@ li.navigation__item a:active,
   height: 580px;
 
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .phone_horizontal .phone__image {

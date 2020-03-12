@@ -8,11 +8,16 @@
     }
 
     const linksToAnchors = document.querySelectorAll('.navigation__item a[href^="#"]'),
+        phonesImages = document.querySelectorAll('.phone__image'),
         categories = document.querySelectorAll('.category'),
         portfolioImages = document.querySelectorAll('.portfolio__image');
 
     linksToAnchors.forEach(function(anchor) {
-      anchor.addEventListener("click", anchorLinkHandler);
+        anchor.addEventListener("click", anchorLinkHandler);
+    });
+
+    phonesImages.forEach(function(image) {
+        image.addEventListener("click", phoneImageClick);
     });
 
     portfolioImages.forEach(function(image) {
@@ -38,6 +43,11 @@
              block: 'start'
          });
          history.pushState(null, null, targetID);
+    }
+
+    function phoneImageClick(e) {
+        e.preventDefault();
+        this.style.opacity = this.style.opacity === "0" ? "1" : "0";
     }
 
     function portfolioImageClick(e) {
