@@ -2,12 +2,18 @@
     "use strict";
 
     const NAMES = {
+        navigationItemClassName: 'navigation__item',
         categoryClassName: 'category',
         portfolioImageClassName: 'portfolio__image'
     }
 
-    var categories = document.querySelectorAll('.category'),
+    const linksToAnchors = document.querySelectorAll('.navigation__item a[href^="#"]'),
+        categories = document.querySelectorAll('.category'),
         portfolioImages = document.querySelectorAll('.portfolio__image');
+
+    linksToAnchors.forEach(function(anchor) {
+      anchor.addEventListener("click", anchorLinkHandler);
+    });
 
     portfolioImages.forEach(function(image) {
         image.addEventListener("click", portfolioImageClick);
@@ -16,6 +22,23 @@
     categories.forEach(function(category) {
         category.addEventListener("click", categoryClick);
     });
+
+    function anchorLinkHandler(e) {
+         e.preventDefault();
+
+         if (!this.parentNode.classList.contains(NAMES.navigationItemClassName + '_selected')) {
+             linksToAnchors.forEach(element => element.parentNode.classList.remove(NAMES.navigationItemClassName + '_selected'));
+             this.parentNode.classList.toggle(NAMES.navigationItemClassName + '_selected');
+         }
+         let targetID = this.getAttribute('href');
+         let target = document.querySelector(targetID);
+
+         target.scrollIntoView({
+             behavior: 'smooth',
+             block: 'start'
+         });
+         history.pushState(null, null, targetID);
+    }
 
     function portfolioImageClick(e) {
         e.preventDefault();
@@ -30,7 +53,7 @@
     function categoryClick(e) {
         e.preventDefault();
 
-        var category = e.target.textContent;
+        let category = e.target.textContent;
 
         if (!this.classList.contains(NAMES.categoryClassName + '_selected')) {
 
