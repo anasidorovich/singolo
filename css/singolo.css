@@ -17,7 +17,7 @@ body {
   background-color: #f2f2f2;
 }
 
-.main {
+.page {
   /* The main section will take up all the available free space
       on the page that is not taken up by the footer. */
   flex: 1 0 auto;
@@ -414,6 +414,15 @@ li.navigation__item a:active,
   padding-bottom: 27px;
 }
 
+.portfolio__image {
+  cursor: pointer;
+  border: none;
+}
+
+.portfolio__image_highlighted {
+  border: 5px solid #f06c64;
+}
+
 .layout-3-column {
   display: flex;
   flex-wrap: wrap;
@@ -443,6 +452,7 @@ li.navigation__item a:active,
   flex-wrap: wrap;
   width: 100%;
   margin-bottom: 53px;
+  justify-content: space-between;
 }
 
 .about .columns__item {
@@ -455,7 +465,6 @@ li.navigation__item a:active,
 .layout-4-column .columns__column {
   display: flex;
   flex-basis: 23%;
-  margin-right: 20px;
   margin-bottom: 20px;
 }
 
@@ -490,16 +499,17 @@ li.navigation__item a:active,
           border-radius: 5px;
 }
 
-a.category {
+li.category {
   padding-right: 6px;
   padding-left: 6px;
 
   font-size: 12px;
   line-height: 19px;
   font-family: Lato-Regular, Helvetica, sans-serif;
+  cursor: pointer;
 }
 
-a.category:first-child {
+li.category:first-child {
   padding-right: 7px;
   padding-left: 7px;
 }

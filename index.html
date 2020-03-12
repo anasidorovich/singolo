@@ -135,25 +135,25 @@
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
         </div>
       </div>
-      <div class="categories">
-        <a class="category category_selected" href="">All</a>
-        <a class="category" href="">Web Design</a>
-        <a class="category" href="">Graphic Design</a>
-        <a class="category" href="">Artwork</a>
-      </div>
+      <ul class="categories">
+        <li class="category category_selected">All</li>
+        <li id="web" class="category">Web Design</li>
+        <li id="graphic" class="category">Graphic Design</li>
+        <li id="art" class="category">Artwork</li>
+      </ul>
       <div class="layout-4-column">
-        <img class="columns__column" src="./assets/portfolio/image1.png" width="220" height="187" alt="image1">
-        <img class="columns__column" src="./assets/portfolio/image2.png" width="220" height="187" alt="image2">
-        <img class="columns__column" src="./assets/portfolio/image3.png" width="220" height="187" alt="image3">
-        <img class="columns__column" src="./assets/portfolio/image4.png" width="220" height="187" alt="image4">
-        <img class="columns__column" src="./assets/portfolio/image5.png" width="220" height="187" alt="image5">
-        <img class="columns__column" src="./assets/portfolio/image6.png" width="220" height="187" alt="image6">
-        <img class="columns__column" src="./assets/portfolio/image7.png" width="220" height="187" alt="image7">
-        <img class="columns__column" src="./assets/portfolio/image8.png" width="220" height="187" alt="image8">
-        <img class="columns__column" src="./assets/portfolio/image9.png" width="220" height="187" alt="image9">
-        <img class="columns__column" src="./assets/portfolio/image10.png" width="220" height="187" alt="image10">
-        <img class="columns__column" src="./assets/portfolio/image11.png" width="220" height="187" alt="image11">
-        <img class="columns__column" src="./assets/portfolio/image12.png" width="220" height="187" alt="image12">
+        <img class="portfolio__image columns__column" data-category-type="art" src="./assets/portfolio/image1.png" width="220" height="187" alt="image1">
+        <img class="portfolio__image columns__column" data-category-type="graphic" src="./assets/portfolio/image2.png" width="220" height="187" alt="image2">
+        <img class="portfolio__image columns__column" data-category-type="web" src="./assets/portfolio/image3.png" width="220" height="187" alt="image3">
+        <img class="portfolio__image columns__column" data-category-type="art" src="./assets/portfolio/image4.png" width="220" height="187" alt="image4">
+        <img class="portfolio__image columns__column" data-category-type="web" src="./assets/portfolio/image5.png" width="220" height="187" alt="image5">
+        <img class="portfolio__image columns__column" data-category-type="graphic" src="./assets/portfolio/image6.png" width="220" height="187" alt="image6">
+        <img class="portfolio__image columns__column" data-category-type="graphic" src="./assets/portfolio/image7.png" width="220" height="187" alt="image7">
+        <img class="portfolio__image columns__column" data-category-type="graphic" src="./assets/portfolio/image8.png" width="220" height="187" alt="image8">
+        <img class="portfolio__image columns__column" data-category-type="web" src="./assets/portfolio/image9.png" width="220" height="187" alt="image9">
+        <img class="portfolio__image columns__column" data-category-type="art" src="./assets/portfolio/image10.png" width="220" height="187" alt="image10">
+        <img class="portfolio__image columns__column" data-category-type="web" src="./assets/portfolio/image11.png" width="220" height="187" alt="image11">
+        <img class="portfolio__image columns__column" data-category-type="art" src="./assets/portfolio/image12.png" width="220" height="187" alt="image12">
       </div>
     </div>
   </section>
@@ -263,6 +263,7 @@
     </div>
   </footer>
 </div>
+<script src="script.js"></script>
 </body>
 
 </html>
