@@ -1,6 +1,8 @@
 (function() {
     "use strict";
 
+    window.addEventListener('resize', setTransform);
+
     const NAMES = {
         navigationItemClassName: 'navigation__item',
         categoryClassName: 'category',
@@ -10,11 +12,40 @@
     const linksToAnchors = document.querySelectorAll('.navigation__item a[href^="#"]'),
         phonesImages = document.querySelectorAll('.phone__image'),
         categories = document.querySelectorAll('.category'),
-        portfolioImages = document.querySelectorAll('.portfolio__image');
+        portfolioImages = document.querySelectorAll('.portfolio__image'),
+        slides = document.querySelector('.slider-wrapper'),
+        sliderChevs = document.querySelectorAll('.slider-chev');
+
+    var itemCount = document.querySelectorAll('.slide').length, pos = 0;
 
     linksToAnchors.forEach(function(anchor) {
         anchor.addEventListener("click", anchorLinkHandler);
     });
+
+    function setTransform() {
+        var transformed = 'translate3d(' + (-pos * slides.offsetWidth) + 'px,0,0)';
+        slides.style.WebkitTransform = transformed;
+        slides.style.msTransform = transformed;
+        slides.style.transform = transformed;
+    }
+
+    sliderChevs.forEach(function(chev) {
+        chev.addEventListener("click", nextSlider);
+    });
+
+    function nextSlider(e) {
+        e.preventDefault();
+        if (this.classList.contains('slider-chev_left')) {
+            pos--;
+        }
+        if (this.classList.contains('slider-chev_right')) {
+            pos++;
+        }
+        if (pos < 0 || pos == itemCount) {
+            pos = 0;
+        }
+        setTransform();
+    }
 
     phonesImages.forEach(function(image) {
         image.addEventListener("click", phoneImageClick);
@@ -29,20 +60,20 @@
     });
 
     function anchorLinkHandler(e) {
-         e.preventDefault();
+        e.preventDefault();
 
-         if (!this.parentNode.classList.contains(NAMES.navigationItemClassName + '_selected')) {
-             linksToAnchors.forEach(element => element.parentNode.classList.remove(NAMES.navigationItemClassName + '_selected'));
-             this.parentNode.classList.toggle(NAMES.navigationItemClassName + '_selected');
-         }
-         let targetID = this.getAttribute('href');
-         let target = document.querySelector(targetID);
+        if (!this.parentNode.classList.contains(NAMES.navigationItemClassName + '_selected')) {
+            linksToAnchors.forEach(element => element.parentNode.classList.remove(NAMES.navigationItemClassName + '_selected'));
+            this.parentNode.classList.toggle(NAMES.navigationItemClassName + '_selected');
+        }
+        let targetID = this.getAttribute('href');
+        let target = document.querySelector(targetID);
 
-         target.scrollIntoView({
-             behavior: 'smooth',
-             block: 'start'
-         });
-         history.pushState(null, null, targetID);
+        target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+        history.pushState(null, null, targetID);
     }
 
     function phoneImageClick(e) {
@@ -95,11 +126,11 @@
         (function show(counter) {
             setTimeout(function() {
                 if (item[counter]) {
-                  item[counter].style.display = null;
-                  counter++;
-                  if (counter < item.length) {
-                    show(counter);
-                  }
+                    item[counter].style.display = null;
+                    counter++;
+                    if (counter < item.length) {
+                        show(counter);
+                    }
                 }
             }, 50);
         })(0);
