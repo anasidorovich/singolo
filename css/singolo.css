@@ -218,7 +218,7 @@ li.navigation__item a:active,
 .slider-chev:focus,
 .slider-chev:active {
   cursor: pointer;
-  opacity: 0.4;
+  background:url(../assets/sliders/chev_active.png) no-repeat center;
 }
 
 .slider-chev_left {

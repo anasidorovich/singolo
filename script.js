@@ -9,14 +9,16 @@
         portfolioImageClassName: 'portfolio__image'
     }
 
-    const linksToAnchors = document.querySelectorAll('.navigation__item a[href^="#"]'),
+    var linksToAnchors = document.querySelectorAll('.navigation__item a[href^="#"]'),
         phonesImages = document.querySelectorAll('.phone__image'),
         categories = document.querySelectorAll('.category'),
         portfolioImages = document.querySelectorAll('.portfolio__image'),
         slides = document.querySelector('.slider-wrapper'),
         sliderChevs = document.querySelectorAll('.slider-chev');
 
-    var itemCount = document.querySelectorAll('.slide').length, pos = 0;
+    var itemCount = document.querySelectorAll('.slide').length,
+        orderList = Array.from({ length: phonesImages.length }, (v, k) => k),
+        pos = 0;
 
     linksToAnchors.forEach(function(anchor) {
         anchor.addEventListener("click", anchorLinkHandler);
@@ -101,11 +103,11 @@
             categories.forEach(element => element.classList.remove(NAMES.categoryClassName + '_selected'));
             this.classList.toggle(NAMES.categoryClassName + '_selected');
 
-            if (category === 'All') {
-                animate(portfolioImages);
-            } else {
-                filterItems(this.id);
-            }
+            portfolioImages.forEach(function(image) {
+              image.style.display = 'none';
+            });
+
+            animate(portfolioImages);
         }
     }
 
@@ -123,16 +125,21 @@
     }
 
     function animate(item) {
+        orderList.sort(function () {
+          return (Math.round(Math.random()) - 0.5);
+        });
+
         (function show(counter) {
             setTimeout(function() {
                 if (item[counter]) {
                     item[counter].style.display = null;
+                    item[counter].style.order = orderList[counter];
                     counter++;
                     if (counter < item.length) {
                         show(counter);
                     }
                 }
-            }, 50);
+            }, 30);
         })(0);
     }
 
