@@ -42,7 +42,7 @@
     <div class="slider-chev slider-chev_left"></div>
 
     <div class="slider-viewport">
-        <div class="slider-wrapper">
+      <div class="slider-wrapper">
         <div class="slide">
           <div class="phone phone_vertical">
             <div class="phone__image"></div>
@@ -58,7 +58,7 @@
         <div class="slide">
           <img class="slider-2" src="./assets/sliders/slide-2.png" width="1020" height="600" alt="slider-2">
         </div>
-        </div>
+      </div>
     </div>
 
     <div class="slider-chev slider-chev_right"></div>
@@ -229,7 +229,7 @@
       </div>
       <div class="layout-2-column">
         <div class="get-quote__form">
-          <form action="https://pixabay.com/images/download/nose-4420535_1920.jpg?attachment%5E&modal" method="POST">
+          <form method="POST">
             <div class="columns__column">
               <input type="text" name="name" placeholder="Name (Required)" required>
               <input type="email" name="email" placeholder="Email (Required)" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
@@ -237,10 +237,19 @@
               <input type="text" name="subject" placeholder="Subject">
               <textarea name="message" placeholder="Describe your project in detail..."></textarea>
               <div class="get-quote__button">
-                <button type="submit" class="button button_colored">Get a Quote</button>
+                <button  type="submit" class="button button_colored">Get a Quote</button>
               </div>
             </div>
           </form>
+          <div class="overlay fade">
+            <div class="popup">
+              <h4 class="popup__h2">Письмо отправлено</h4>
+              <p>Тема: </p>
+              <p>Описание: </p>
+              OK
+              <div class="close-popup"></div>
+            </div>
+          </div>
         </div>
         <div class="get-quote__content">
           <div class="column">

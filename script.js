@@ -14,7 +14,8 @@
         categories = document.querySelectorAll('.category'),
         portfolioImages = document.querySelectorAll('.portfolio__image'),
         slides = document.querySelector('.slider-wrapper'),
-        sliderChevs = document.querySelectorAll('.slider-chev');
+        sliderChevs = document.querySelectorAll('.slider-chev'),
+        formPopupOverlay = document.querySelector('.get-quote__form .overlay');
 
     var itemCount = document.querySelectorAll('.slide').length,
         orderList = Array.from({ length: phonesImages.length }, (v, k) => k),
@@ -59,6 +60,19 @@
 
     categories.forEach(function(category) {
         category.addEventListener("click", categoryClick);
+    });
+
+    document.querySelector('.get-quote__form form').addEventListener('submit', function(e) {
+      	e.preventDefault();
+      	formPopupOverlay.classList.remove('fade');
+    }, false);
+
+    document.querySelector('.close-popup').addEventListener('click',  function() {
+        formPopupOverlay.classList.add('fade');
+    });
+
+    document.addEventListener('mouseup',  function() {
+        formPopupOverlay.classList.add('fade');
     });
 
     function anchorLinkHandler(e) {
@@ -126,7 +140,7 @@
 
     function animate(item) {
         orderList.sort(function () {
-          return (Math.round(Math.random()) - 0.5);
+            return (Math.round(Math.random()) - 0.5);
         });
 
         (function show(counter) {
