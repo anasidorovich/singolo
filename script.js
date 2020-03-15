@@ -47,17 +47,19 @@
         chev.addEventListener("click", nextSlider);
     });
 
+    function currentSlide(i) {
+      return (i + itemCount) % itemCount;
+    }
+
     function nextSlider(e) {
         e.preventDefault();
         if (this.classList.contains('slider-chev_left')) {
-            pos--;
+            pos = currentSlide(pos - 1);
         }
         if (this.classList.contains('slider-chev_right')) {
-            pos++;
+            pos = currentSlide(pos + 1);
         }
-        if (pos < 0 || pos == itemCount) {
-            pos = 0;
-        }
+
         setTransform();
     }
 
@@ -81,6 +83,8 @@
 
         sbjElement.innerText = this.elements['subject'].value || sbjElement.getAttribute("data-default-value");
         messageElement.innerText = this.elements['message'].value || messageElement.getAttribute("data-default-value");
+
+        this.reset();
 
         formPopupOverlay.classList.remove('fade');
     }, false);
