@@ -3,6 +3,15 @@
 
     window.addEventListener('resize', setTransform);
 
+    /*
+    function showNextSlider() {
+      if (sliderChevs[1]) {
+       // sliderChevs[1].click();
+      }
+    }
+    setInterval(showNextSlider, 2000);
+    */
+
     const NAMES = {
         navigationItemClassName: 'navigation__item',
         categoryClassName: 'category',
@@ -18,7 +27,9 @@
         formPopupOverlay = document.querySelector('.get-quote__form .overlay');
 
     var itemCount = document.querySelectorAll('.slide').length,
-        orderList = Array.from({ length: phonesImages.length }, (v, k) => k),
+        portfolioImagesOrders = Array.from({
+            length: portfolioImages.length
+        }, (v, k) => k),
         pos = 0;
 
     linksToAnchors.forEach(function(anchor) {
@@ -63,16 +74,28 @@
     });
 
     document.querySelector('.get-quote__form form').addEventListener('submit', function(e) {
-      	e.preventDefault();
-      	formPopupOverlay.classList.remove('fade');
+        e.preventDefault();
+
+        let sbjElement = formPopupOverlay.querySelector(".popup__subject span"),
+            messageElement = formPopupOverlay.querySelector(".popup__message span");
+
+        sbjElement.innerText = this.elements['subject'].value || sbjElement.getAttribute("data-default-value");
+        messageElement.innerText = this.elements['message'].value || messageElement.getAttribute("data-default-value");
+
+        formPopupOverlay.classList.remove('fade');
     }, false);
 
-    document.querySelector('.close-popup').addEventListener('click',  function() {
+    document.querySelector('.close-popup').addEventListener('click', function() {
         formPopupOverlay.classList.add('fade');
     });
 
-    document.addEventListener('mouseup',  function() {
+    document.querySelector('.popup__button').addEventListener('click', function() {
         formPopupOverlay.classList.add('fade');
+    });
+
+    document.addEventListener('mouseup', function() {
+        formPopupOverlay.classList.add('fade');
+        portfolioImages.forEach(element => element.classList.remove(NAMES.portfolioImageClassName + '_highlighted'));
     });
 
     function anchorLinkHandler(e) {
@@ -118,36 +141,21 @@
             this.classList.toggle(NAMES.categoryClassName + '_selected');
 
             portfolioImages.forEach(function(image) {
-              image.style.display = 'none';
+                image.style.display = 'none';
             });
 
             animate(portfolioImages);
         }
     }
 
-    function filterItems(category) {
-        var filteredPortfolioImages = [];
-        portfolioImages.forEach(item => {
-            if (category == item.getAttribute("data-category-type")) {
-                filteredPortfolioImages.push(item);
-            } else {
-                item.style.display = 'none';
-                item.classList.remove(NAMES.portfolioImageClassName + '_highlighted');
-            }
-        });
-        animate(filteredPortfolioImages);
-    }
-
     function animate(item) {
-        orderList.sort(function () {
-            return (Math.round(Math.random()) - 0.5);
-        });
+       portfolioImagesOrders.sort(function() { return 0.5 - Math.random() });
 
         (function show(counter) {
             setTimeout(function() {
                 if (item[counter]) {
                     item[counter].style.display = null;
-                    item[counter].style.order = orderList[counter];
+                    item[counter].style.order = portfolioImagesOrders[counter];
                     counter++;
                     if (counter < item.length) {
                         show(counter);
