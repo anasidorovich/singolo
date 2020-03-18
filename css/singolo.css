@@ -75,6 +75,8 @@ ul {
 
   background-color: #2d303a;
   border-bottom: 6px solid #323746;
+
+  transition: 0.5s;
 }
 
 .header .wrapper,
@@ -87,6 +89,10 @@ ul {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+.header__navigation {
+  padding-top: 11px;
 }
 
 .logo {
@@ -112,12 +118,48 @@ ul {
 
 .navigation a {
   display: block;
-  padding: 11px 0 0 14px;
+  padding: 0 0 0 14px;
 
   line-height: 6px;
   font-family: Lato-Bold, Helvetica, sans-serif;
   color: #ffffff;
   letter-spacing: -0.2px;
+
+  cursor: default;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+
+  width: inherit;
+}
+
+.fixed-header_scrolled .header__navigation {
+  padding-top: 0;
+}
+
+.fixed-header_scrolled {
+  height: 70px;
+
+  border-bottom: none;
+  opacity: 0.7;
+}
+
+.fixed-header_scrolled .logo {
+  visibility: hidden;
+}
+
+.header__placeholder {
+  height: 95px;
+
+  background-color: #f06c64;
+}
+
+a:any-link,
+a:-webkit-any-link {
+  cursor: default;
 }
 
 .navigation > li:not(:last-child) > a:after {
@@ -134,10 +176,20 @@ ul {
   opacity: 0.5;
 }
 
-li.navigation__item a:hover,
-li.navigation__item a:active,
+li.navigation__item a:hover span,
+li.navigation__item a:active span,
 .navigation__item_selected a {
   color: #f06c64;
+
+  cursor: pointer;
+}
+
+li.navigation__item :not(a:hover span),
+li.navigation__item :not(a:active span),
+.navigation__item_selected a {
+  color: #f06c64;
+
+  cursor: pointer;
 }
 
 .title {
