@@ -15,6 +15,7 @@
         phonesImages = document.querySelectorAll('.phone__image'),
         categories = document.querySelectorAll('.category'),
         portfolioImages = document.querySelectorAll('.portfolio__image'),
+        portfolioImagesOrders = Array.from({ length: portfolioImages.length }, (v, k) => k),
         portfolio = portfolioImages[0].parentNode,
         slides = document.querySelector('.slider-wrapper'),
         sliderChevs = document.querySelectorAll('.slider-chev'),
@@ -142,9 +143,15 @@
 
             categories.forEach(element => element.classList.remove(NAMES.categoryClassName + '_selected'));
             this.classList.toggle(NAMES.categoryClassName + '_selected');
-            for (let i = portfolioImages.length; i >= 0; i--) {
-               portfolio.appendChild(portfolioImages[Math.random() * i | 0]);
-            }
+
+            shufflePortfolioImages();
+        }
+    }
+
+    function shufflePortfolioImages() {
+        portfolioImagesOrders.sort(function() { return 0.5 - Math.random(); });
+        for (let i = portfolioImages.length - 1; i >= 0; i--) {
+           portfolio.appendChild(portfolioImages[portfolioImagesOrders[i]]);
         }
     }
 
