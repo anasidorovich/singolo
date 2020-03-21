@@ -95,10 +95,12 @@
         e.preventDefault();
 
         let sbjElement = formPopupOverlay.querySelector(".popup__subject span"),
-            messageElement = formPopupOverlay.querySelector(".popup__message span");
+            messageElement = formPopupOverlay.querySelector(".popup__message span"),
+            subject = this.elements['subject'].value,
+            message = this.elements['message'].value;
 
-        sbjElement.innerText = this.elements['subject'].value || sbjElement.getAttribute("data-default-value");
-        messageElement.innerText = this.elements['message'].value || messageElement.getAttribute("data-default-value");
+        sbjElement.innerText = subject ? 'Subject: ' +  subject : sbjElement.getAttribute("data-default-value");
+        messageElement.innerText = message ? 'Description: ' + message : messageElement.getAttribute("data-default-value");
 
         this.reset();
 

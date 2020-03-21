@@ -802,6 +802,7 @@ li.category:first-child {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 10000;
 
   display: block;
   width: 100%;
@@ -818,7 +819,6 @@ li.category:first-child {
   position: absolute;
   top: 50%;
   left: 50%;
-  z-index: 10000;
 
   box-sizing: border-box;
   min-width: 400px;
@@ -857,6 +857,20 @@ li.category:first-child {
   padding: 5px;
 
   font-size: 16px;
+}
+
+.get-quote__form .popup__message span {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+     -moz-box-orient: vertical;
+  overflow: hidden;
+
+  word-break: break-all;
+
+      -ms-box-orient: vertical;
+  -webkit-line-clamp: 5;
+     -moz-line-clamp: 5;
+      -ms-line-clamp: 5;
 }
 
 .get-quote__form .popup__h3 {
