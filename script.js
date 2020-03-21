@@ -1,7 +1,6 @@
 (function() {
     "use strict";
 
-    window.addEventListener('resize', setTransform);
     window.addEventListener('scroll', onScroll);
 
     const NAMES = {
@@ -15,17 +14,20 @@
         phonesImages = document.querySelectorAll('.phone__image'),
         categories = document.querySelectorAll('.category'),
         portfolioImages = document.querySelectorAll('.portfolio__image'),
-        portfolioImagesOrders = Array.from({ length: portfolioImages.length }, (v, k) => k),
+        portfolioImagesOrders = Array.from({
+            length: portfolioImages.length
+        }, (v, k) => k),
         portfolio = portfolioImages[0].parentNode,
-        slides = document.querySelector('.slider-wrapper'),
+        sliderItems = document.querySelectorAll('.slide'),
         sliderChevs = document.querySelectorAll('.slider-chev'),
-        formPopupOverlay = document.querySelector('.get-quote__form .overlay');
-
-    var slidesCount = document.querySelectorAll('.slide').length,
+        formPopupOverlay = document.querySelector('.get-quote__form .overlay'),
+        slidesCount = sliderItems.length,
         section = document.querySelectorAll("section"),
         sections = {},
-        pos = 0,
-        sectionKey = 0;
+        position = 0,
+        sectionKey = 0,
+        move = true;
+
     sections[header.id] = header.offsetTop - header.offsetHeight;
 
     Array.prototype.forEach.call(section, function(e) {
@@ -36,31 +38,45 @@
         anchor.addEventListener("click", anchorLinkHandler);
     });
 
-    function setTransform() {
-        var transformed = 'translate3d(' + (-pos * slides.offsetWidth) + 'px,0,0)';
-        slides.style.WebkitTransform = transformed;
-        slides.style.msTransform = transformed;
-        slides.style.transform = transformed;
-    }
-
     sliderChevs.forEach(function(chev) {
-        chev.addEventListener("click", nextSlider);
+        chev.addEventListener("click", nextSlide);
     });
 
     function currentSlide(index) {
         return (index + slidesCount) % slidesCount;
     }
 
-    function nextSlider(e) {
+    function nextSlide(e) {
         e.preventDefault();
-        if (this.classList.contains('slider-chev_left')) {
-            pos = currentSlide(pos - 1);
+        if (move) {
+          if (this.classList.contains('slider-chev_left')) {
+              hideSlide('move-to-right');
+              position = currentSlide(position - 1);
+              showSlide('move-from-left');
+          }
+          if (this.classList.contains('slider-chev_right')) {
+              hideSlide('move-to-left');
+              position = currentSlide(position + 1);
+              showSlide('move-from-right');
+          }
         }
-        if (this.classList.contains('slider-chev_right')) {
-            pos = currentSlide(pos + 1);
-        }
+    }
 
-        setTransform();
+    function hideSlide(direction) {
+        move = false;
+        sliderItems[position].classList.add(direction);
+        sliderItems[position].addEventListener('animationend', function() {
+            this.classList.remove('slide_active', direction);
+        });
+    }
+
+    function showSlide(direction) {
+        sliderItems[position].classList.add('slide_next', direction);
+        sliderItems[position].addEventListener('animationend', function() {
+            this.classList.remove('slide_next', direction);
+            this.classList.add('slide_active');
+            move = true;
+        });
     }
 
     phonesImages.forEach(function(image) {
@@ -149,9 +165,11 @@
     }
 
     function shufflePortfolioImages() {
-        portfolioImagesOrders.sort(function() { return 0.5 - Math.random(); });
+        portfolioImagesOrders.sort(function() {
+            return 0.5 - Math.random();
+        });
         for (let i = portfolioImages.length - 1; i >= 0; i--) {
-           portfolio.appendChild(portfolioImages[portfolioImagesOrders[i]]);
+            portfolio.appendChild(portfolioImages[portfolioImagesOrders[i]]);
         }
     }
 

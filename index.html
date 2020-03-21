@@ -19,7 +19,6 @@
 <body>
 <div class="page">
   <h1 class="visuallyhidden">Singolo</h1>
-  <div class="header__placeholder"></div>
   <header id="home" class="header fixed-header">
     <div class="wrapper">
       <div class="logo">
@@ -37,248 +36,246 @@
       </nav>
     </div>
   </header>
-    <div class="slider">
-      <div class="slider-viewport">
-        <div class="slider-wrapper">
-          <div class="slide">
-            <div class="phone phone_vertical">
-              <div class="phone__image"></div>
-              <div class="phone__container"></div>
-              <div class="phone__shadow"></div>
-            </div>
-            <div class="phone phone_horizontal">
-              <div class="phone__image"></div>
-              <div class="phone__container"></div>
-              <div class="phone__shadow"></div>
-            </div>
-          </div>
-          <div class="slide">
-            <img src="./assets/sliders/slide-2.png" width="1020" height="600" alt="slider-2">
-          </div>
+  <div class="slider">
+    <div class="slider-wrapper">
+      <div class="slide__block slide slide_active">
+        <div class="phone phone_vertical">
+          <div class="phone__image"></div>
+          <div class="phone__container"></div>
+          <div class="phone__shadow"></div>
+        </div>
+        <div class="phone phone_horizontal">
+          <div class="phone__image"></div>
+          <div class="phone__container"></div>
+          <div class="phone__shadow"></div>
         </div>
       </div>
-      <div class="slider-chev slider-chev_left"></div>
-      <div class="slider-chev slider-chev_right"></div>
+      <div class="slide__block slide slide-2">
+        <img src="./assets/sliders/slide-2.png" width="1020" height="600" alt="slide-2">
+      </div>
     </div>
-
-    <section id="services" class="services">
-      <div class="wrapper">
-        <div class="services__header">
-          <h2 class="services__title title">Our Services</h2>
-          <div class="services__description description">
-            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula,
-              eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          </div>
-        </div>
-        <div class="layout-3-column">
-          <div class="columns__column">
-            <div class="columns__item">
-              <span class="item__icon ico ico_pen"></span>
-              <div class="item__content">
-                <h4>Custom Design</h4>
-                <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.
-                  Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="columns__column">
-            <div class="columns__item">
-              <span class="item__icon ico ico_bulb"></span>
-              <div class="item__content">
-                <h4>Inovative Ideas</h4>
-                <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
-              </div>
-            </div>
-          </div>
-          <div class="columns__column">
-            <div class="columns__item">
-              <span class="item__icon ico ico_heart"></span>
-              <div class="item__content">
-                <h4>Love Is The Answer</h4>
-                <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
-              </div>
-            </div>
-          </div>
-          <div class="columns__column">
-            <div class="columns__item">
-              <span class="item__icon ico ico_s_phone"></span>
-              <div class="item__content">
-                <h4>Responsive Layout</h4>
-                <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
-              </div>
-            </div>
-          </div>
-          <div class="columns__column">
-            <div class="columns__item">
-              <span class="item__icon ico ico_bubble"></span>
-              <div class="item__content">
-                <h4>24 / 7 Support</h4>
-                <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem.</p>
-              </div>
-            </div>
-          </div>
-          <div class="columns__column">
-            <div class="columns__item">
-              <span class="item__icon ico ico_star"></span>
-              <div class="item__content">
-                <h4>Feel Like A Star</h4>
-                <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="portfolio" class="portfolio">
-      <div class="wrapper">
-        <div class="portfolio__header">
-          <h2 class="portfolio__title title">Portfolio</h2>
-          <div class="portfolio__description description">
-            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-          </div>
-        </div>
-        <ul class="categories">
-          <li class="category category_selected">All</li>
-          <li id="web" class="category">Web Design</li>
-          <li id="graphic" class="category">Graphic Design</li>
-          <li id="art" class="category">Artwork</li>
-        </ul>
-        <div class="layout-4-column">
-          <img class="portfolio__image columns__column" data-category-type="art" src="./assets/portfolio/image1.png" width="220" height="187" alt="image1">
-          <img class="portfolio__image columns__column" data-category-type="graphic" src="./assets/portfolio/image2.png" width="220" height="187" alt="image2">
-          <img class="portfolio__image columns__column" data-category-type="web" src="./assets/portfolio/image3.png" width="220" height="187" alt="image3">
-          <img class="portfolio__image columns__column" data-category-type="art" src="./assets/portfolio/image4.png" width="220" height="187" alt="image4">
-          <img class="portfolio__image columns__column" data-category-type="web" src="./assets/portfolio/image5.png" width="220" height="187" alt="image5">
-          <img class="portfolio__image columns__column" data-category-type="graphic" src="./assets/portfolio/image6.png" width="220" height="187" alt="image6">
-          <img class="portfolio__image columns__column" data-category-type="graphic" src="./assets/portfolio/image7.png" width="220" height="187" alt="image7">
-          <img class="portfolio__image columns__column" data-category-type="graphic" src="./assets/portfolio/image8.png" width="220" height="187" alt="image8">
-          <img class="portfolio__image columns__column" data-category-type="web" src="./assets/portfolio/image9.png" width="220" height="187" alt="image9">
-          <img class="portfolio__image columns__column" data-category-type="art" src="./assets/portfolio/image10.png" width="220" height="187" alt="image10">
-          <img class="portfolio__image columns__column" data-category-type="web" src="./assets/portfolio/image11.png" width="220" height="187" alt="image11">
-          <img class="portfolio__image columns__column" data-category-type="art" src="./assets/portfolio/image12.png" width="220" height="187" alt="image12">
-        </div>
-      </div>
-    </section>
-    <section id="about" class="about">
-      <div class="wrapper">
-        <div class="about__header">
-          <h2 class="about__title title">About Us</h2>
-          <div class="about__description description">
-            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          </div>
-        </div>
-        <div class="layout-3-column">
-          <div class="columns__column">
-            <div class="columns__item">
-              <img class="about__photo" src="./assets/about-us/adam.png" width="300" height="300" alt="adam">
-              <div class="item__content">
-                <h4>Adam Jensen</h4>
-                <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
-              </div>
-              <div class="socials">
-                <span class="item__icon ico ico_facebook"></span>
-                <span class="item__icon ico ico_google"></span>
-                <span class="item__icon ico ico_twitter"></span>
-                <span class="item__icon ico ico_linkedin"></span>
-              </div>
-            </div>
-          </div>
-          <div class="columns__column">
-            <div class="columns__item">
-              <img class="about__photo" src="./assets/about-us/desmond.png" width="300" height="300" alt="desmond">
-              <div class="item__content">
-                <h4>Desmond Miles</h4>
-                <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
-              </div>
-              <div class="socials">
-                <span class="item__icon ico ico_facebook"></span>
-                <span class="item__icon ico ico_google"></span>
-                <span class="item__icon ico ico_twitter"></span>
-                <span class="item__icon ico ico_linkedin"></span>
-              </div>
-            </div>
-          </div>
-          <div class="columns__column">
-            <div class="columns__item">
-              <img class="about__photo" src="./assets/about-us/scolara.png" width="300" height="300" alt="scolara">
-              <div class="item__content">
-                <h4>Scolara Visari</h4>
-                <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
-              </div>
-              <div class="socials">
-                <span class="item__icon ico ico_facebook"></span>
-                <span class="item__icon ico ico_google"></span>
-                <span class="item__icon ico ico_twitter"></span>
-                <span class="item__icon ico ico_linkedin"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="contact" class="get-quote">
-      <div class="wrapper">
-        <div class="get-quote__header">
-          <h2 class="get-quote__title title">Get a Quote</h2>
-          <div class="get-quote__description description">
-            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          </div>
-        </div>
-        <div class="layout-2-column">
-          <div class="get-quote__form">
-            <form method="POST">
-              <div class="columns__column">
-                <input type="text" name="name" placeholder="Name (Required)" required>
-                <input type="email" name="email" placeholder="Email (Required)" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-
-                <input type="text" name="subject" placeholder="Subject">
-                <textarea name="message" placeholder="Describe your project in detail..."></textarea>
-                <div class="get-quote__button">
-                  <button type="submit" class="button button_colored">send</button>
-                </div>
-              </div>
-            </form>
-            <div class="overlay fade">
-              <div class="popup">
-                <div class="popup__status">
-                  <img src="./assets/contacts/check-solid.svg" width="50" alt="t">
-                  <h3 class="popup__h3">The letter was sent</h3>
-                </div>
-                <div class="popup__content">
-                  <p class="popup__subject">Subject:&nbsp;&nbsp;<span data-default-value="Without subject"></span></p>
-                  <p class="popup__message">Description:&nbsp;&nbsp;<span data-default-value="Without description"></span></p>
-                </div>
-                <button class="button popup__button  button_colored">ok</button>
-                <div class="close-popup"></div>
-              </div>
-            </div>
-          </div>
-          <div class="get-quote__content">
-            <div class="column">
-              <h4>Contact Information</h4>
-              <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. </p>
-              <div class="row"><span class="ico ico_location"></span>Elm St. 14/05 Lost City</div>
-              <div class="row"><span class="ico ico_phone"></span> <a href="tel:+375111111111">03528 331 86 35 </a></div>
-              <div class="row"><span class="ico ico_email"></span> <a href="mailto:info@singolo.com">info@singolo.com</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="slider-chev slider-chev_left"></div>
+    <div class="slider-chev slider-chev_right"></div>
   </div>
-  <footer class="footer">
-    <div class="wrapper footer__wrapper">
-      <a href="#" class="copyright">&copy; Copyright 2013</a>
-      <div class="footer__content">
-        <div class="socials">
-          <span class="socials__icon ico ico_facebook"></span>
-          <span class="socials__icon ico ico_google"></span>
-          <span class="socials__icon ico ico_twitter"></span>
-          <span class="socials__icon ico ico_linkedin"></span>
+
+  <section id="services" class="services">
+    <div class="wrapper">
+      <div class="services__header">
+        <h2 class="services__title title">Our Services</h2>
+        <div class="services__description description">
+          <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula,
+            eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+        </div>
+      </div>
+      <div class="layout-3-column">
+        <div class="columns__column">
+          <div class="columns__item">
+            <span class="item__icon ico ico_pen"></span>
+            <div class="item__content">
+              <h4>Custom Design</h4>
+              <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.
+                Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="columns__column">
+          <div class="columns__item">
+            <span class="item__icon ico ico_bulb"></span>
+            <div class="item__content">
+              <h4>Inovative Ideas</h4>
+              <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+            </div>
+          </div>
+        </div>
+        <div class="columns__column">
+          <div class="columns__item">
+            <span class="item__icon ico ico_heart"></span>
+            <div class="item__content">
+              <h4>Love Is The Answer</h4>
+              <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+            </div>
+          </div>
+        </div>
+        <div class="columns__column">
+          <div class="columns__item">
+            <span class="item__icon ico ico_s_phone"></span>
+            <div class="item__content">
+              <h4>Responsive Layout</h4>
+              <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="columns__column">
+          <div class="columns__item">
+            <span class="item__icon ico ico_bubble"></span>
+            <div class="item__content">
+              <h4>24 / 7 Support</h4>
+              <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem.</p>
+            </div>
+          </div>
+        </div>
+        <div class="columns__column">
+          <div class="columns__item">
+            <span class="item__icon ico ico_star"></span>
+            <div class="item__content">
+              <h4>Feel Like A Star</h4>
+              <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </footer>
+  </section>
+  <section id="portfolio" class="portfolio">
+    <div class="wrapper">
+      <div class="portfolio__header">
+        <h2 class="portfolio__title title">Portfolio</h2>
+        <div class="portfolio__description description">
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+        </div>
+      </div>
+      <ul class="categories">
+        <li class="category category_selected">All</li>
+        <li id="web" class="category">Web Design</li>
+        <li id="graphic" class="category">Graphic Design</li>
+        <li id="art" class="category">Artwork</li>
+      </ul>
+      <div class="layout-4-column">
+        <img class="portfolio__image columns__column" data-category-type="art" src="./assets/portfolio/image1.png" width="220" height="187" alt="image1">
+        <img class="portfolio__image columns__column" data-category-type="graphic" src="./assets/portfolio/image2.png" width="220" height="187" alt="image2">
+        <img class="portfolio__image columns__column" data-category-type="web" src="./assets/portfolio/image3.png" width="220" height="187" alt="image3">
+        <img class="portfolio__image columns__column" data-category-type="art" src="./assets/portfolio/image4.png" width="220" height="187" alt="image4">
+        <img class="portfolio__image columns__column" data-category-type="web" src="./assets/portfolio/image5.png" width="220" height="187" alt="image5">
+        <img class="portfolio__image columns__column" data-category-type="graphic" src="./assets/portfolio/image6.png" width="220" height="187" alt="image6">
+        <img class="portfolio__image columns__column" data-category-type="graphic" src="./assets/portfolio/image7.png" width="220" height="187" alt="image7">
+        <img class="portfolio__image columns__column" data-category-type="graphic" src="./assets/portfolio/image8.png" width="220" height="187" alt="image8">
+        <img class="portfolio__image columns__column" data-category-type="web" src="./assets/portfolio/image9.png" width="220" height="187" alt="image9">
+        <img class="portfolio__image columns__column" data-category-type="art" src="./assets/portfolio/image10.png" width="220" height="187" alt="image10">
+        <img class="portfolio__image columns__column" data-category-type="web" src="./assets/portfolio/image11.png" width="220" height="187" alt="image11">
+        <img class="portfolio__image columns__column" data-category-type="art" src="./assets/portfolio/image12.png" width="220" height="187" alt="image12">
+      </div>
+    </div>
+  </section>
+  <section id="about" class="about">
+    <div class="wrapper">
+      <div class="about__header">
+        <h2 class="about__title title">About Us</h2>
+        <div class="about__description description">
+          <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+        </div>
+      </div>
+      <div class="layout-3-column">
+        <div class="columns__column">
+          <div class="columns__item">
+            <img class="about__photo" src="./assets/about-us/adam.png" width="300" height="300" alt="adam">
+            <div class="item__content">
+              <h4>Adam Jensen</h4>
+              <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+            </div>
+            <div class="socials">
+              <span class="item__icon ico ico_facebook"></span>
+              <span class="item__icon ico ico_google"></span>
+              <span class="item__icon ico ico_twitter"></span>
+              <span class="item__icon ico ico_linkedin"></span>
+            </div>
+          </div>
+        </div>
+        <div class="columns__column">
+          <div class="columns__item">
+            <img class="about__photo" src="./assets/about-us/desmond.png" width="300" height="300" alt="desmond">
+            <div class="item__content">
+              <h4>Desmond Miles</h4>
+              <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+            </div>
+            <div class="socials">
+              <span class="item__icon ico ico_facebook"></span>
+              <span class="item__icon ico ico_google"></span>
+              <span class="item__icon ico ico_twitter"></span>
+              <span class="item__icon ico ico_linkedin"></span>
+            </div>
+          </div>
+        </div>
+        <div class="columns__column">
+          <div class="columns__item">
+            <img class="about__photo" src="./assets/about-us/scolara.png" width="300" height="300" alt="scolara">
+            <div class="item__content">
+              <h4>Scolara Visari</h4>
+              <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+            </div>
+            <div class="socials">
+              <span class="item__icon ico ico_facebook"></span>
+              <span class="item__icon ico ico_google"></span>
+              <span class="item__icon ico ico_twitter"></span>
+              <span class="item__icon ico ico_linkedin"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="get-quote">
+    <div class="wrapper">
+      <div class="get-quote__header">
+        <h2 class="get-quote__title title">Get a Quote</h2>
+        <div class="get-quote__description description">
+          <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+        </div>
+      </div>
+      <div class="layout-2-column">
+        <div class="get-quote__form">
+          <form method="POST">
+            <div class="columns__column">
+              <input type="text" name="name" placeholder="Name (Required)" required>
+              <input type="email" name="email" placeholder="Email (Required)" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+
+              <input type="text" name="subject" placeholder="Subject">
+              <textarea name="message" placeholder="Describe your project in detail..."></textarea>
+              <div class="get-quote__button">
+                <button type="submit" class="button button_colored">send</button>
+              </div>
+            </div>
+          </form>
+          <div class="overlay fade">
+            <div class="popup">
+              <div class="popup__status">
+                <img src="./assets/contacts/check-solid.svg" width="50" alt="t">
+                <h3 class="popup__h3">The letter was sent</h3>
+              </div>
+              <div class="popup__content">
+                <p class="popup__subject">Subject:&nbsp;&nbsp;<span data-default-value="Without subject"></span></p>
+                <p class="popup__message">Description:&nbsp;&nbsp;<span data-default-value="Without description"></span></p>
+              </div>
+              <button class="button popup__button  button_colored">ok</button>
+              <div class="close-popup"></div>
+            </div>
+          </div>
+        </div>
+        <div class="get-quote__content">
+          <div class="column">
+            <h4>Contact Information</h4>
+            <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. </p>
+            <div class="row"><span class="ico ico_location"></span>Elm St. 14/05 Lost City</div>
+            <div class="row"><span class="ico ico_phone"></span> <a href="tel:+375111111111">03528 331 86 35 </a></div>
+            <div class="row"><span class="ico ico_email"></span> <a href="mailto:info@singolo.com">info@singolo.com</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<footer class="footer">
+  <div class="wrapper footer__wrapper">
+    <a href="#" class="copyright">&copy; Copyright 2013</a>
+    <div class="footer__content">
+      <div class="socials">
+        <span class="socials__icon ico ico_facebook"></span>
+        <span class="socials__icon ico ico_google"></span>
+        <span class="socials__icon ico ico_twitter"></span>
+        <span class="socials__icon ico ico_linkedin"></span>
+      </div>
+    </div>
+  </div>
+</footer>
 <script src="script.js"></script>
 </body>
 
