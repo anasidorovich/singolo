@@ -1,0 +1,29 @@
+@media screen and (min-width: 1020px) {
+  .get-quote__form {
+    width: 66%;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1019px) {
+  .page {
+    width: 100vw;
+  }
+
+  .wrapper {
+    width: calc(100vw - 80px);
+  }
+
+  .about .layout-3-column .columns__column {
+    width: 31.824%;
+  }
+
+
+  .get-quote .columns__column {
+    width: 57.554vw;
+  }
+
+  .get-quote__content {
+    width: 32.122093%;
+  }
+}
