@@ -105,6 +105,10 @@
     opacity: 0.6;
   }
 
+  .menu {
+    display: block;
+  }
+
   .menu.open .menu__navigation {
     position: absolute;
 
@@ -172,7 +176,6 @@
     transform: translateY(8.8px);
   }
 
-  /* Animation */
   .menu-btn.open {
     transform: rotate(90deg);
   }
