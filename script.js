@@ -10,6 +10,7 @@
     }
 
     var header = document.querySelector('.header'),
+        menu = document.querySelector('.menu'),
         linksToAnchors = document.querySelectorAll('.navigation__item a[href^="#"]'),
         phonesImages = document.querySelectorAll('.phone__image'),
         categories = document.querySelectorAll('.category'),
@@ -23,6 +24,7 @@
         formPopupOverlay = document.querySelector('.get-quote__form .overlay'),
         slidesCount = sliderItems.length,
         section = document.querySelectorAll("section"),
+        lasSectionKey = section[section.length - 1].id,
         sections = {},
         position = 0,
         sectionKey = 0,
@@ -78,6 +80,11 @@
             move = true;
         });
     }
+
+    document.querySelector('.menu-btn').addEventListener('click', function() {
+        this.classList.toggle('open');
+        menu.classList.toggle('open');
+    });
 
     phonesImages.forEach(function(image) {
         image.addEventListener("click", phoneImageClick);
@@ -175,6 +182,16 @@
         }
     }
 
+    function markSelected(sectionKey) {
+        linksToAnchors.forEach(element => {
+            if (element.getAttribute('href') == '#' + sectionKey) {
+                element.parentNode.classList.add(NAMES.navigationItemClassName + '_selected');
+            } else {
+                element.parentNode.classList.remove(NAMES.navigationItemClassName + '_selected');
+            }
+        });
+    }
+
     function onScroll() {
         var scrollPosition = window.scrollY || window.pageYOffset;
         if (scrollPosition > header.offsetHeight) {
@@ -184,18 +201,11 @@
         }
         let scrollEnded = window.innerHeight + window.scrollY >= document.body.offsetHeight;
         if (scrollEnded) {
-            linksToAnchors.forEach(element => element.parentNode.classList.remove(NAMES.navigationItemClassName + '_selected'));
-            linksToAnchors[linksToAnchors.length - 1].parentNode.classList.add(NAMES.navigationItemClassName + '_selected');
+            markSelected(lasSectionKey);
         } else {
             for (sectionKey in sections) {
                 if (sections[sectionKey] <= scrollPosition) {
-                    linksToAnchors.forEach(element => {
-                        if (element.getAttribute('href') == '#' + sectionKey) {
-                            element.parentNode.classList.add(NAMES.navigationItemClassName + '_selected');
-                        } else {
-                            element.parentNode.classList.remove(NAMES.navigationItemClassName + '_selected');
-                        }
-                    })
+                    markSelected(sectionKey);
                 }
             }
         }
