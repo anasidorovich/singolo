@@ -11,6 +11,7 @@
 
     var header = document.querySelector('.header'),
         menu = document.querySelector('.menu'),
+        menuButton = document.querySelector('.menu-btn'),
         linksToAnchors = document.querySelectorAll('.navigation__item a[href^="#"]'),
         phonesImages = document.querySelectorAll('.phone__image'),
         categories = document.querySelectorAll('.category'),
@@ -81,7 +82,7 @@
         });
     }
 
-    document.querySelector('.menu-btn').addEventListener('click', function() {
+    menuButton.addEventListener('click', function() {
         this.classList.toggle('open');
         menu.classList.toggle('open');
     });
@@ -135,6 +136,10 @@
             linksToAnchors.forEach(element => element.parentNode.classList.remove(NAMES.navigationItemClassName + '_selected'));
             navItemClassList.toggle(NAMES.navigationItemClassName + '_selected');
         }
+
+        menu.classList.remove('open');
+        menu.classList.remove('open');
+
         let targetID = this.getAttribute('href');
         let target = document.querySelector(targetID);
 

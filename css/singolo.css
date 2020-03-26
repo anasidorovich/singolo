@@ -158,7 +158,6 @@ a:-webkit-any-link {
   border-radius: 50%;
 }
 
-li.navigation__item a:hover span,
 li.navigation__item a:active span,
 .navigation__item_selected a {
   color: #f06c64;
@@ -166,7 +165,6 @@ li.navigation__item a:active span,
   cursor: pointer;
 }
 
-li.navigation__item :not(a:hover span),
 li.navigation__item :not(a:active span),
 .navigation__item_selected a {
   color: #f06c64;
@@ -184,10 +182,8 @@ li.navigation__item :not(a:active span),
   height: 100vh;
 
   list-style-type: none;
-  /* base-blue */
 
   background: #2d303a;
-  box-shadow: 0 -40px 20px rgba(0, 0, 0, 0.4);
   transform: translate(-100%, 0);
   transform-origin: 0 0;
 
@@ -327,7 +323,6 @@ li.navigation__item :not(a:active span),
   opacity: 0.6;
 }
 
-.slider-chev:hover,
 .slider-chev:focus,
 .slider-chev:active {
   cursor: pointer;
@@ -646,7 +641,6 @@ li.category:first-child {
   padding-left: 7px;
 }
 
-.category:hover,
 .category:active,
 .category.category_selected {
   color: #dedede;
@@ -695,7 +689,6 @@ li.category:first-child {
           border-radius: 50%;
 }
 
-.about .ico:hover,
 .about .ico:active {
   background-color: #ffffff;
   cursor: pointer;
@@ -983,7 +976,7 @@ li.category:first-child {
 }
 
 
-.button_colored:hover {
+.button_colored:active {
   color: #f0d8d9;
 
   background-color: transparent;
@@ -1050,7 +1043,6 @@ li.category:first-child {
   background-color: #eb5055;
 }
 
-.socials .ico:hover,
 .socials .ico:active {
   background-color: #ffffff;
   cursor: pointer;

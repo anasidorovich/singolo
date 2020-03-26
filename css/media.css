@@ -265,3 +265,47 @@
     display: none;
   }
 }
+
+@media(hover: hover) and (pointer: fine) {
+  li.navigation__item a:hover span {
+    color: #f06c64;
+
+    cursor: pointer;
+  }
+
+  li.navigation__item :not(a:hover span) {
+    color: #f06c64;
+
+    cursor: pointer;
+  }
+
+  .slider-chev:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+
+
+  .category:hover {
+    color: #dedede;
+
+    border: 1px solid #c5c5c5;
+  }
+
+  .about .ico:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+
+  .button_colored:hover {
+    color: #f0d8d9;
+
+    background-color: transparent;
+    border: 1px solid #f0d8d9;
+    border-radius: 4px;
+  }
+
+  .socials .ico:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+}
