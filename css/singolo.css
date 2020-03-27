@@ -829,7 +829,7 @@ li.category:first-child {
   left: 50%;
 
   box-sizing: border-box;
-  min-width: 400px;
+  min-width: 300px;
   max-width: 500px;
   padding: 40px;
 
