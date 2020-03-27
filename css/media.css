@@ -31,7 +31,10 @@
   }
 
   .slider {
-    margin-bottom: 3.4522477711vw;
+    margin-bottom: 3.2vw;
+  }
+  .services {
+      border-bottom: none;
   }
 }
 
@@ -86,28 +89,37 @@
     letter-spacing: -0.03em;
   }
 
+  .description {
+    letter-spacing: 0px;
+  }
+
   .menu.open .logo-2 {
     position: absolute;
     left: 71px;
 
     display: flex;
   }
-  .menu.open .overlay {
+  .menu-overlay {
     position: fixed;
     top: 0;
     left: 0;
 
-    display: block;
+    display: none;
     width: 100%;
     height: 100vh;
 
     background-color: #2d303a;
     opacity: 0.6;
+    transition-delay: 0.3s;
   }
 
   .menu {
-    display: block;
-  }
+       display: block;
+   }
+
+   .menu-overlay.open {
+       display: block;
+   }
 
   .menu.open .menu__navigation {
     position: absolute;
@@ -195,7 +207,7 @@
   }
 
   .menu.open {
-    transform: none;
+    transform: translateX(0%)
   }
 
   .menu-btn {
@@ -212,7 +224,8 @@
     justify-content: space-between;
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 9%;
+    margin-bottom: 7%;
+    padding-bottom: 11%;
   }
 
   .layout-4-column .columns__column {
@@ -264,6 +277,39 @@
   .footer .copyright {
     display: none;
   }
+  .slide__block {
+      height: calc(58.82291666666667vw + 71px);
+      padding-top: 71px;
+    }
+    .services .layout-3-column .columns__column {
+
+        margin-bottom: 7vw;
+    }
+    .services__header {
+
+        margin-bottom: 8vw;
+    }
+    .portfolio__header {
+        padding-top: 9vw;
+    }
+    .portfolio {
+        margin-bottom: 0px;
+        border-bottom: none;
+    }
+    .about__header {
+        margin-bottom: 7%;
+    }
+    .about .item__content {
+        margin-bottom: 2%;
+    }
+    .get-quote__button {
+
+        padding-top: 4px;
+    }
+    .get-quote .columns__column > *:not(:last-child) {
+        margin-bottom: 11px;
+
+    }
 }
 
 @media(hover: hover) and (pointer: fine) {
@@ -308,4 +354,6 @@
     background-color: #ffffff;
     cursor: pointer;
   }
+
+
 }
