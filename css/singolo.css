@@ -398,7 +398,7 @@ li.navigation__item :not(a:active span),
   top: 13.4%;
   left: 6.1%;
 
-  background-image: url(../assets/sliders/tablets/phone-vertical-display_dt.png);
+  background-image: url(../assets/sliders/phone-vertical-display_dt.png);
 }
 
 .phone_horizontal .phone__shadow {
@@ -829,8 +829,8 @@ li.category:first-child {
   left: 50%;
 
   box-sizing: border-box;
-  min-width: 300px;
-  max-width: 500px;
+  min-width: 400px;
+  max-width: 700px;
   padding: 40px;
 
   color: #f0d8d9;
