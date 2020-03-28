@@ -40,6 +40,9 @@
 }
 
 @media (min-width: 768px) and (max-width: 1019px) {
+  .header__navigation {
+    padding-top: 7px;
+  }
   .services__content  .columns__column {
     margin-right: 5%;
   }
@@ -54,6 +57,7 @@
 
   .get-quote__content {
     width: 32.122093%;
+    padding-left: 2px;
   }
 
   .portfolio__image {
@@ -64,15 +68,82 @@
     height: calc(58.82291666666667vw + 95px);
     padding-top: 71px;
   }
+  .slide {
+    border-bottom-width: 4.52px;
+  }
+  .services__title {
+    padding-top: 24px;
+  }
+  .services__header {
+    margin-bottom: 38px;
+  }
+  .services .layout-3-column .columns__column {
+    margin-bottom: 50px;
+  }
+  .services .layout-3-column {
+    margin-bottom: 24px;
+  }
+  .categories {
+    margin-bottom: 29px;
+  }
+  .portfolio {
+    margin-bottom: 41px;
 
+    border-bottom-width: 7.6px;
+  }
+  .about__header {
+    margin-bottom: 38px;
+  }
+  .about__photo {
+    margin-bottom: 12px;
+  }
+  .about .item__content h4 {
+    padding-bottom: 5px;
+  }
+  .about .item__content {
+    margin-bottom: 10px;
+  }
+  .about {
+    padding-bottom: 12px;
 
+    border-bottom: none;
+  }
+  .get-quote__form input {
+    padding: 8px 10px 8px 10px;
+  }
+  .get-quote__header {
+    padding-top: 44px;
+    padding-bottom: 24px;
+  }
+  .get-quote .columns__column > *:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  .get-quote__form textarea {
+    padding: 7px 10px 8px 10px;
+  }
+  .get-quote__button {
+    margin-top: 6px;
+  }
+  .get-quote__form {
+    padding-bottom: 26px;
+  }
+  .get-quote__content h4 {
+    padding-bottom: 6px;
+  }
+  .get-quote__content p {
+    max-height: 130px;
+    margin-bottom: 10px;
+  }
+  .layout-4-column {
+    margin-bottom: 55px;
+  }
   .phone.phone_vertical {
     width: 23.56770833vw;
     height: 47.3958333vw;
   }
 
   .phone.phone_horizontal {
-    width: 473958333vw;
+    width: 47.3958333vw;
     height: 23.56770833vw;
   }
 
@@ -94,10 +165,14 @@
     width: 69.27374%;
     height: 78.65168%;
   }
+  .phone.phone_horizontal {
+    top: 33.1%;
+    left: 41.5%;
+  }
 
   .phone_vertical .phone__image {
-    top: 13.5%;
-    left: 6%;
+    top: 13.1%;
+    left: 5.5%;
   }
 
   .phone.phone_vertical {
@@ -112,15 +187,21 @@
     background-size: cover;
   }
   .slider-chev {
-    top: calc(50% + 8%);
+    top: 56.12431444%;
+
+    width: 17px;
+    height: 29px;
+    padding: 0;
+
+    background-size: contain;
   }
 
   .slider-chev_left {
-    left: 2%;
+    left: calc(3.90625% - 1px);
   }
 
   .slider-chev_right {
-    right: 2%;
+    right: calc(3.90625% - 3px);
   }
 }
 
@@ -293,15 +374,20 @@
     padding-top: 71px;
   }
   .slider-chev {
-    top: calc(50% + 8%);
+    top: 57.69745%;
+
+    width: 15px;
+    height: 25px;
+
+    background-size: contain;
   }
 
   .slider-chev_left {
-    left: 2%;
+    left: calc(2.667777% - 3px);
   }
 
   .slider-chev_right {
-    right: 2%;
+    right: calc(2.667777% - 3px);
   }
 
   .phone.phone_vertical {
@@ -409,6 +495,7 @@
   .get-quote__form textarea {
     padding: 7px 8px 8px 8px;
   }
+
   .get-quote__button .button {
     width: 100%;
     height: 50px;
