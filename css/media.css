@@ -164,6 +164,7 @@
     left: 71px;
 
     display: flex;
+    margin-left: 0;
   }
   .menu-overlay {
     position: fixed;
@@ -192,7 +193,8 @@
     position: absolute;
 
     display: block;
-    padding: 28.57142857142857vh 0 0 71px;
+    margin-top: 234px;
+    padding-left: 71px;
   }
 
   .menu-btn {
@@ -423,7 +425,7 @@
   }
 
   .get-quote__content h4 {
-    padding-bottom: 3px;
+    padding-bottom: 4px;
   }
   .get-quote__form .popup {
     max-width: 70%;
