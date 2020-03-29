@@ -9,6 +9,8 @@
         portfolioImageClassName: 'portfolio__image'
     }
 
+    const OFFSET_HEIGHT = 70;
+
     var header = document.querySelector('.header'),
         menu = document.querySelector('.menu'),
         menuButton = document.querySelector('.menu-btn'),
@@ -32,10 +34,10 @@
         sectionKey = 0,
         move = true;
 
-    sections[header.id] = header.offsetTop - header.offsetHeight;
+    sections[header.id] = header.offsetTop - OFFSET_HEIGHT;
 
     Array.prototype.forEach.call(section, function(e) {
-        sections[e.id] = e.offsetTop - header.offsetHeight;
+        sections[e.id] = e.offsetTop - OFFSET_HEIGHT;
     });
 
     linksToAnchors.forEach(function(anchor) {
@@ -149,7 +151,7 @@
         let target = document.querySelector(targetID);
 
         window.scrollTo({
-            top: target.offsetTop - header.offsetHeight,
+            top: target.offsetTop - OFFSET_HEIGHT,
             behavior: "smooth"
         });
 
