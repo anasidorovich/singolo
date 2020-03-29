@@ -26,6 +26,7 @@
         sliderItems = document.querySelectorAll('.slide'),
         sliderChevs = document.querySelectorAll('.slider-chev'),
         formPopupOverlay = document.querySelector('.get-quote__form .overlay'),
+        contactForm = document.querySelector('.get-quote__form form'),
         slidesCount = sliderItems.length,
         section = document.querySelectorAll("section"),
         lasSectionKey = section[section.length - 1].id,
@@ -107,7 +108,7 @@
         category.addEventListener("click", categoryClick);
     });
 
-    document.querySelector('.get-quote__form form').addEventListener('submit', function(e) {
+    contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
 
         let sbjElement = formPopupOverlay.querySelector(".popup__subject span"),
@@ -118,22 +119,17 @@
         sbjElement.innerText = subject ? 'Subject: ' +  subject : sbjElement.getAttribute("data-default-value");
         messageElement.innerText = message ? 'Description: ' + message : messageElement.getAttribute("data-default-value");
 
-        this.reset();
-
         formPopupOverlay.classList.remove('fade');
     }, false);
 
     document.querySelector('.close-popup').addEventListener('click', function() {
+        contactForm.reset();
         formPopupOverlay.classList.add('fade');
     });
 
     document.querySelector('.popup__button').addEventListener('click', function() {
+        contactForm.reset();
         formPopupOverlay.classList.add('fade');
-    });
-
-    document.addEventListener('mouseup', function() {
-        formPopupOverlay.classList.add('fade');
-        portfolioImages.forEach(element => element.classList.remove(NAMES.portfolioImageClassName + '_highlighted'));
     });
 
     function anchorLinkHandler(e) {
@@ -186,7 +182,7 @@
 
             categories.forEach(element => element.classList.remove(NAMES.categoryClassName + '_selected'));
             this.classList.toggle(NAMES.categoryClassName + '_selected');
-
+            portfolioImages.forEach(element => element.classList.remove(NAMES.portfolioImageClassName + '_highlighted'));
             shufflePortfolioImages();
         }
     }
