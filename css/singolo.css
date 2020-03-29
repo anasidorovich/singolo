@@ -422,7 +422,7 @@ li.navigation__item :not(a:active span),
 
 .services__header {
   margin: 0 auto;
-  margin-bottom: 45px;
+  margin-bottom: 47px;
   padding-top: 48px;
 }
 
@@ -438,7 +438,7 @@ li.navigation__item :not(a:active span),
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .services .layout-3-column .columns__column {
@@ -458,6 +458,7 @@ li.navigation__item :not(a:active span),
 .services .columns__item {
   display: flex;
   align-items: flex-start;
+  width: 100%;
 }
 
 .item__content h4 {
@@ -552,7 +553,7 @@ li.navigation__item :not(a:active span),
 }
 
 .portfolio__image_highlighted {
-  border: 5px solid #f06c64;
+  outline: 5px solid #f06c64;
 }
 
 .about .layout-3-column {
@@ -579,7 +580,7 @@ li.navigation__item :not(a:active span),
   flex-wrap: wrap;
   width: calc(100% + 20px);
   margin: -10px -10px;
-  margin-bottom: 57px;
+  margin-bottom: 58px;
 }
 
 .about .columns__item {
@@ -650,7 +651,7 @@ li.category:first-child {
 }
 
 .about__header {
-  margin-bottom: 45px;
+  margin-bottom: 44px;
   padding-top: 48px;
 }
 

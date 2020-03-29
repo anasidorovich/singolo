@@ -57,7 +57,8 @@
     padding-left: 2px;
   }
 
-  .portfolio__image {
+  .layout-4-column .columns__column.portfolio__image {
+    flex: 1 0 30%;
     width: 30%;
   }
 
@@ -101,7 +102,7 @@
     margin-bottom: 10px;
   }
   .about {
-    padding-bottom: 11px;
+    padding-bottom: 13px;
 
     border-bottom: none;
   }
@@ -207,7 +208,7 @@
     width: calc(100vw - 60px);
   }
   .about .layout-3-column {
-    margin-bottom: 10px;
+    margin-bottom: 11px;
   }
 
   .about .layout-3-column .columns__column {
@@ -529,11 +530,12 @@
   }
 
   .services .layout-3-column .columns__column {
-    margin-bottom: 6.95vw;
+    width: calc(100% - 10px);
+    margin-bottom: 26px;
   }
   .services__header {
-    margin-bottom: 7.9vw;
-    padding-top: 3.5vw;
+    margin-bottom: 29px;
+    padding-top: 14px;
   }
   .portfolio__header {
     margin-bottom: 17px;
